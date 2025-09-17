@@ -5,16 +5,18 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <img 
-                src="/logo-resibraz.jpg" 
-                alt="RESIBRAZ Logo" 
-                className="h-12 w-auto object-contain bg-white rounded p-1"
-              />
+              <div className="bg-white rounded-lg p-2 flex items-center justify-center">
+                <img 
+                  src="/logo-resibraz.jpg" 
+                  alt="RESIBRAZ Logo" 
+                  className="h-8 w-auto object-contain"
+                />
+              </div>
               <span className="text-xl font-bold">RESIBRAZ</span>
             </div>
             <p className="text-primary-foreground/80 mb-4 leading-relaxed">
@@ -88,24 +90,24 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary-foreground/20 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-primary-foreground/60">
+        <div className="border-t border-primary-foreground/20 mt-8 sm:mt-12 pt-6 sm:pt-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <p className="text-xs sm:text-sm text-primary-foreground/60 text-center sm:text-left">
               © {currentYear} RESIBRAZ. Todos os direitos reservados.
             </p>
             
-            <div className="flex space-x-6">
+            <div className="flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6">
               <a
                 href="https://wa.me/5511970394816"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-primary-foreground/80 hover:text-accent transition-colors duration-300"
+                className="text-xs sm:text-sm text-primary-foreground/80 hover:text-accent transition-colors duration-300"
               >
                 WhatsApp
               </a>
               <a
                 href="mailto:vendas@resibraz.com.br"
-                className="text-sm text-primary-foreground/80 hover:text-accent transition-colors duration-300"
+                className="text-xs sm:text-sm text-primary-foreground/80 hover:text-accent transition-colors duration-300"
               >
                 E-mail
               </a>
@@ -113,7 +115,7 @@ const Footer = () => {
                 href="https://instagram.com/resibraz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-primary-foreground/80 hover:text-accent transition-colors duration-300"
+                className="text-xs sm:text-sm text-primary-foreground/80 hover:text-accent transition-colors duration-300"
               >
                 Instagram
               </a>
@@ -121,7 +123,7 @@ const Footer = () => {
                 href="https://facebook.com/resibraz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-primary-foreground/80 hover:text-accent transition-colors duration-300"
+                className="text-xs sm:text-sm text-primary-foreground/80 hover:text-accent transition-colors duration-300"
               >
                 Facebook
               </a>

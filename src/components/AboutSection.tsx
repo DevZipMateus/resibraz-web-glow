@@ -9,15 +9,15 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 section-alt">
-      <div className="container mx-auto px-4">
+    <section id="sobre" className="py-16 sm:py-20 section-alt">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 sm:mb-6">
               Sobre a RESIBRAZ
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
               Uma empresa brasileira com tradição e inovação em soluções de aquecimento elétrico industrial
             </p>
           </div>
@@ -45,8 +45,8 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-semibold text-primary mb-4">Segmentos de atuação</h3>
-                <div className="grid grid-cols-2 gap-3">
+                <h3 className="text-xl sm:text-2xl font-semibold text-primary mb-4">Segmentos de atuação</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[
                     "Máquinas extrusora",
                     "Máquinas sopradora", 
@@ -58,7 +58,7 @@ const AboutSection = () => {
                     "Estufas industriais"
                   ].map((segment) => (
                     <div key={segment} className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-accent rounded-full"></div>
+                      <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0"></div>
                       <span className="text-sm text-muted-foreground">{segment}</span>
                     </div>
                   ))}
@@ -82,14 +82,14 @@ const AboutSection = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center group">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors duration-300">
-                  <stat.icon className="w-8 h-8 text-primary" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+                  <stat.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                 </div>
-                <div className="text-3xl font-bold text-primary mb-2">{stat.number}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">{stat.number}</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}
           </div>
