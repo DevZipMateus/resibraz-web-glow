@@ -1,4 +1,5 @@
-import { Phone, Mail, MapPin, Clock, MessageSquare, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import whatsappIcon from "@/assets/whatsapp-icon.webp";
 
 const ContactSection = () => {
   const contactInfo = [
@@ -116,7 +117,7 @@ const ContactSection = () => {
               <div className="card-elegant p-6 sm:p-8 bg-gradient-to-br from-green-50 to-green-100 border-green-200">
                 <div className="text-center">
                   <div className="w-14 h-14 sm:w-16 sm:h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <MessageSquare className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+                    <img src={whatsappIcon} alt="WhatsApp" className="w-7 h-7 sm:w-8 sm:h-8" />
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold text-green-800 mb-3">
                     Atendimento via WhatsApp
@@ -130,7 +131,7 @@ const ContactSection = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium transition-colors duration-300 text-sm sm:text-base"
                   >
-                    <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <img src={whatsappIcon} alt="WhatsApp" className="w-4 h-4 sm:w-5 sm:h-5" />
                     <span>Iniciar conversa</span>
                   </a>
                 </div>
