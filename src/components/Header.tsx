@@ -32,22 +32,19 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? "bg-white/95 backdrop-blur-md shadow-lg" 
-          : "bg-white/90 backdrop-blur-sm"
+          ? "bg-white shadow-lg" 
+          : "bg-white"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img 
               src="/logo-resibraz.jpg" 
               alt="RESIBRAZ Logo" 
               className="h-10 w-auto object-contain"
             />
-            <span className="text-xl font-bold text-primary hidden sm:block">
-              RESIBRAZ
-            </span>
           </div>
 
           {/* Desktop Menu */}
