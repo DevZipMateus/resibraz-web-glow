@@ -14,6 +14,11 @@ import produto7 from '@/assets/produto-7.jpg';
 import produto8 from '@/assets/produto-8.jpg';
 import produto9 from '@/assets/produto-9.jpg';
 import produto10 from '@/assets/produto-10.jpg';
+import produto11 from '@/assets/produto-11.jpg';
+import produto12 from '@/assets/produto-12.jpg';
+import produto13 from '@/assets/produto-13.jpg';
+import produto14 from '@/assets/produto-14.jpg';
+import produto15 from '@/assets/produto-15.jpg';
 
 const produtos = [
   { id: 1, src: produto1, alt: 'Resistências Industriais Cilíndricas' },
@@ -26,6 +31,11 @@ const produtos = [
   { id: 8, src: produto8, alt: 'Aquecedores Industriais Diversos' },
   { id: 9, src: produto9, alt: 'Aquecedores Dispostos em Pirâmide' },
   { id: 10, src: produto10, alt: 'Cabos e Conectores Especiais' },
+  { id: 11, src: produto11, alt: 'Resistências Tubulares em Paralelo' },
+  { id: 12, src: produto12, alt: 'Conectores Industriais de Alta Temperatura' },
+  { id: 13, src: produto13, alt: 'Sensores de Temperatura Industriais' },
+  { id: 14, src: produto14, alt: 'Resistências Cartridge com Cabos' },
+  { id: 15, src: produto15, alt: 'Resistências Tubulares Agrupadas' },
 ];
 
 export default function ProductCarousel() {
