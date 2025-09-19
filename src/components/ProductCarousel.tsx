@@ -51,7 +51,7 @@ export default function ProductCarousel() {
 
   return (
     <>
-      <div className="w-full max-w-4xl mx-auto">
+      <div className="w-full max-w-6xl mx-auto">
         <Carousel 
           setApi={setApi}
           opts={{
@@ -59,12 +59,12 @@ export default function ProductCarousel() {
           }}
           className="w-full"
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-1">
             {produtos.map((produto) => (
-              <CarouselItem key={produto.id}>
+              <CarouselItem key={produto.id} className="pl-1 md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <div 
-                    className="relative aspect-[4/3] overflow-hidden rounded-lg bg-card cursor-pointer group"
+                    className="relative aspect-[4/3] overflow-hidden rounded-lg bg-card cursor-pointer group shadow-md hover:shadow-lg transition-shadow duration-300"
                     onClick={() => handleImageClick(produto.src, produto.alt)}
                   >
                     <img
@@ -78,8 +78,8 @@ export default function ProductCarousel() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-2" />
-          <CarouselNext className="right-2" />
+          <CarouselPrevious />
+          <CarouselNext />
         </Carousel>
 
         {/* Indicadores */}
