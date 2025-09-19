@@ -74,13 +74,13 @@ export default function ProductCarousel() {
               <CarouselItem key={produto.id} className="pl-1 md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <div 
-                    className="relative aspect-[4/3] overflow-hidden rounded-lg bg-card cursor-pointer group shadow-md hover:shadow-lg transition-shadow duration-300"
+                    className="relative aspect-square overflow-hidden rounded-lg bg-muted/30 cursor-pointer group shadow-md hover:shadow-lg transition-shadow duration-300"
                     onClick={() => handleImageClick(produto.src, produto.alt)}
                   >
                     <img
                       src={produto.src}
                       alt={produto.alt}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105 p-2"
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
                   </div>
