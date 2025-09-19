@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import whatsappIcon from "@/assets/whatsapp-icon.webp";
+import WhatsAppNumberModal from "./WhatsAppNumberModal";
 
 const ContactSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
   const contactInfo = [
     {
       icon: Phone,
@@ -118,15 +122,13 @@ const ContactSection = () => {
                   <p className="text-sm sm:text-base text-green-700 mb-6 px-2">
                     Fale diretamente com nossa equipe técnica e tire suas dúvidas em tempo real.
                   </p>
-                  <a
-                    href="https://wa.me/5511970394816"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => setIsModalOpen(true)}
                     className="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium transition-colors duration-300 text-sm sm:text-base"
                   >
                     <img src={whatsappIcon} alt="WhatsApp" className="w-4 h-4 sm:w-5 sm:h-5" />
                     <span>Iniciar conversa</span>
-                  </a>
+                  </button>
                 </div>
               </div>
 
@@ -182,6 +184,11 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
+      
+      <WhatsAppNumberModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   );
 };

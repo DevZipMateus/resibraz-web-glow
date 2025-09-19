@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { Zap, Shield, Award } from "lucide-react";
+import WhatsAppNumberModal from "./WhatsAppNumberModal";
 
 const HeroSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Gradient */}
@@ -33,14 +37,12 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 sm:mb-16 animate-fade-in px-4" style={{ animationDelay: "0.6s" }}>
-            <a
-              href="https://wa.me/5511970394816"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => setIsModalOpen(true)}
               className="btn-hero w-full sm:w-auto text-center"
             >
               Fale conosco agora
-            </a>
+            </button>
             <button
               onClick={() => document.querySelector('#servicos')?.scrollIntoView({ behavior: 'smooth' })}
               className="btn-outline w-full sm:w-auto text-center"
@@ -77,6 +79,11 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      
+      <WhatsAppNumberModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   );
 };

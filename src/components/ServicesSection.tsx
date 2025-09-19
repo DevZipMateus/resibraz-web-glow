@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { Flame, Thermometer, Zap, Cable, Settings, Target } from "lucide-react";
+import WhatsAppNumberModal from "./WhatsAppNumberModal";
 
 const ServicesSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
   const services = [
     {
       icon: Flame,
@@ -98,14 +102,12 @@ const ServicesSection = () => {
 
                 {/* CTA */}
                 <div className="pt-4 sm:pt-6 border-t border-border">
-                  <a
-                    href="https://wa.me/5511970394816"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => setIsModalOpen(true)}
                     className="text-primary hover:text-accent font-medium text-xs sm:text-sm transition-colors duration-300"
                   >
                     Solicitar orçamento →
-                  </a>
+                  </button>
                 </div>
               </div>
             ))}
@@ -121,18 +123,21 @@ const ServicesSection = () => {
                 Nossa equipe técnica está pronta para desenvolver soluções específicas 
                 para suas necessidades industriais. Entre em contato conosco.
               </p>
-              <a
-                href="https://wa.me/5511970394816"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setIsModalOpen(true)}
                 className="btn-hero"
               >
                 Falar com especialista
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
+      
+      <WhatsAppNumberModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   );
 };
