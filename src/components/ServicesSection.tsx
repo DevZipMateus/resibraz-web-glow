@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Flame, Thermometer, Zap, Cable, Settings, Target } from "lucide-react";
 import WhatsAppNumberModal from "./WhatsAppNumberModal";
+import ProductCarousel from "./ProductCarousel";
 
 const ServicesSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -56,6 +57,11 @@ const ServicesSection = () => {
               Oferecemos uma linha completa de produtos para aquecimento elétrico industrial, 
               atendendo às necessidades específicas de cada segmento
             </p>
+            
+            {/* Product Carousel */}
+            <div className="mb-8">
+              <ProductCarousel />
+            </div>
             
             {/* Catalog Button */}
             <div className="mb-8">
