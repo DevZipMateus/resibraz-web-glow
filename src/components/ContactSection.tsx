@@ -16,12 +16,6 @@ const ContactSection = () => {
       action: "mailto:vendas@resibraz.com.br"
     },
     {
-      icon: MapPin,
-      title: "Endereço",
-      details: ["Rua Buique, 34", "Pq Casa de Pedra", "CEP 02322-220"],
-      action: "https://maps.google.com/?q=Rua+Buique,+34+Pq+Casa+de+Pedra+CEP+02322-220"
-    },
-    {
       icon: Clock,
       title: "Horário",
       details: ["Segunda a Sexta", "07:30 às 17:30"],
@@ -80,7 +74,6 @@ const ContactSection = () => {
                             >
                               {info.icon === Phone && "Ligar agora"}
                               {info.icon === Mail && "Enviar e-mail"}
-                              {info.icon === MapPin && "Ver no mapa"}
                             </a>
                           )}
                         </div>

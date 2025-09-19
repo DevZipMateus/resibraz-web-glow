@@ -50,14 +50,6 @@ const Footer = () => {
                 <p className="text-sm">vendas@resibraz.com.br</p>
               </div>
               
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-accent mt-0.5" />
-                <div>
-                  <p className="text-sm">Rua Buique, 34</p>
-                  <p className="text-sm">Pq Casa de Pedra</p>
-                  <p className="text-sm">CEP 02322-220</p>
-                </div>
-              </div>
               
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-accent mt-0.5" />
