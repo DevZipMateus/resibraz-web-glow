@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, Instagram, Facebook } from "lucide-react";
 import whatsappIcon from "@/assets/whatsapp-icon.webp";
 import WhatsAppNumberModal from "./WhatsAppNumberModal";
 
@@ -28,8 +28,8 @@ const ContactSection = () => {
   ];
 
   const socialLinks = [
-    { name: "Instagram", url: "https://instagram.com/resibraz", icon: "📷" },
-    { name: "Facebook", url: "https://facebook.com/resibraz", icon: "📘" }
+    { name: "Instagram", url: "https://instagram.com/resibraz", icon: Instagram },
+    { name: "Facebook", url: "https://facebook.com/resibraz", icon: Facebook }
   ];
 
   return (
@@ -99,9 +99,7 @@ const ContactSection = () => {
                       rel="noopener noreferrer"
                       className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-300 group"
                     >
-                      <span className="text-base sm:text-lg group-hover:scale-110 transition-transform duration-300">
-                        {social.icon}
-                      </span>
+                      <social.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                     </a>
                   ))}
                 </div>
