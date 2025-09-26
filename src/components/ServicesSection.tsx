@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Flame, Thermometer, Zap, Cable, Settings, Target } from "lucide-react";
 import WhatsAppNumberModal from "./WhatsAppNumberModal";
 import ProductCarousel from "./ProductCarousel";
+import AlternatingImage from "./AlternatingImage";
 
 const ServicesSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,37 +12,49 @@ const ServicesSection = () => {
       icon: Flame,
       title: "Resistências coleira",
       description: "Resistências coleira em mica ou cerâmica para máquinas industriais",
-      features: ["Alta durabilidade", "Diversos tamanhos", "Aplicação versátil"]
+      features: ["Alta durabilidade", "Diversos tamanhos", "Aplicação versátil"],
+      images: ["/fotos divisoes/Resistências Coleira em Mica.jpeg", "/fotos divisoes/Resistências Coleira e Placa em Mica.jpeg"],
+      alts: ["Resistências Coleira em Mica", "Resistências Coleira e Placa em Mica"]
     },
     {
       icon: Zap,
       title: "Resistências tubulares",
       description: "Resistências tubulares para aquecimento industrial e processos específicos",
-      features: ["Resistência à corrosão", "Distribuição uniforme", "Longa vida útil"]
+      features: ["Resistência à corrosão", "Distribuição uniforme", "Longa vida útil"],
+      images: ["/fotos divisoes/Resistência Tubular Aletada e Helicoidal.webp", "/fotos divisoes/Resistência Tubular Flex.jpeg"],
+      alts: ["Resistência Tubular Aletada e Helicoidal", "Resistência Tubular Flex"]
     },
     {
       icon: Target,
       title: "Resistências cartucho",
       description: "Resistências cartucho para aplicações de precisão e controle de temperatura",
-      features: ["Controle preciso", "Instalação fácil", "Alta eficiência"]
+      features: ["Controle preciso", "Instalação fácil", "Alta eficiência"],
+      images: ["/fotos divisoes/RESISTÊNCIAS CARTUCHO.jpg", "/fotos divisoes/RESISTÊNCIA INFRAVERMELHO CÔNCAVA.jpg"],
+      alts: ["Resistências Cartucho", "Resistência Infravermelho Côncava"]
     },
     {
       icon: Settings,
       title: "Resistências em quartzo",
       description: "Resistências em quartzo ou infravermelho para aquecimento rápido",
-      features: ["Aquecimento instantâneo", "Economia de energia", "Tecnologia avançada"]
+      features: ["Aquecimento instantâneo", "Economia de energia", "Tecnologia avançada"],
+      images: ["/fotos divisoes/Resistências em Quartzo.jpeg", "/fotos divisoes/Resistências em Quartzo em todos os terminais a escolha..jpg"],
+      alts: ["Resistências em Quartzo", "Resistências em Quartzo - Todos os Terminais"]
     },
     {
       icon: Thermometer,
       title: "Termopares",
       description: "Termopares tipo J, K, mineral, PT100 e outros para medição de temperatura",
-      features: ["Precisão garantida", "Diversos tipos", "Aplicação industrial"]
+      features: ["Precisão garantida", "Diversos tipos", "Aplicação industrial"],
+      images: ["/fotos divisoes/TERMOPAR TIPO K .jpeg", "/fotos divisoes/TERMOPAR PT100 ESPECIAL.jpeg"],
+      alts: ["Termopar Tipo K", "Termopar PT100 Especial"]
     },
     {
       icon: Cable,
       title: "Cabos de alta temperatura",
       description: "Cabos de alta temperatura em silicone ou híbrido para ambientes extremos",
-      features: ["Resistência térmica", "Flexibilidade", "Segurança garantida"]
+      features: ["Resistência térmica", "Flexibilidade", "Segurança garantida"],
+      images: ["/fotos divisoes/CABO DE SILICONE 200°C.webp", "/fotos divisoes/CABO HÍBRIDO 400°C.jpg"],
+      alts: ["Cabo de Silicone 200°C", "Cabo Híbrido 400°C"]
     }
   ];
 
@@ -83,6 +96,15 @@ const ServicesSection = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => (
               <div key={index} className="card-elegant p-4 sm:p-6 group hover:scale-105 transition-all duration-300">
+                {/* Product Images */}
+                <div className="w-full h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden">
+                  <AlternatingImage
+                    images={service.images}
+                    alts={service.alts}
+                    className="w-full h-full"
+                  />
+                </div>
+
                 {/* Icon */}
                 <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:from-secondary group-hover:to-accent transition-all duration-300">
                   <service.icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
