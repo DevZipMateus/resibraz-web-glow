@@ -10,55 +10,36 @@ const produtos = [
   { id: 3, src: '/carrossel/resistencia-em-quartzo-terminal-parafuso.jpg', alt: 'Resistência em Quartzo - Terminal Parafuso' },
   { id: 4, src: '/carrossel/resistencias-de-imersao-6.webp', alt: 'Resistências de Imersão' },
   { id: 5, src: '/carrossel/RESISTÊNCIA TUBULAR RETA.jpeg', alt: 'Resistência Tubular Reta' },
-  { id: 6, src: '/carrossel/RTIMERSÃO.webp', alt: 'Resistência Tubular de Imersão' },
-  { id: 7, src: '/carrossel/Resistências em Quartzo.jpeg', alt: 'Resistências em Quartzo' },
-  { id: 8, src: '/carrossel/Resistências em Quartzo em todos os terminais a escolha..jpg', alt: 'Resistências em Quartzo - Terminais Personalizados' },
+  { id: 6, src: '/carrossel/Resistências em Quartzo.jpeg', alt: 'Resistências em Quartzo' },
 
   // Termopares
-  { id: 9, src: '/carrossel/TERMOPAR TIPO J PONTA DE 6MM.jpeg', alt: 'Termopar Tipo J - Ponta 6mm' },
-  { id: 10, src: '/carrossel/TERMOPAR TIPO J PONTA DE 6 OU 8MM.jpeg', alt: 'Termopar Tipo J - Ponta 6 ou 8mm' },
-  { id: 11, src: '/carrossel/TERMOPAR TIPO K PONTA DE 6 E 8MM.jpeg', alt: 'Termopar Tipo K - Ponta 6 e 8mm' },
+  { id: 7, src: '/carrossel/TERMOPAR TIPO J PONTA DE 6MM.jpeg', alt: 'Termopar Tipo J - Ponta 6mm' },
+  { id: 8, src: '/carrossel/TERMOPAR TIPO K PONTA DE 6 E 8MM.jpeg', alt: 'Termopar Tipo K - Ponta 6 e 8mm' },
 
   // Fios e Cabos
-  { id: 12, src: '/carrossel/FIOS E FITAS DE NIQUELCROMO 80 20 RESIBRAZ.jpg', alt: 'Fios e Fitas de Níquel-Cromo 80/20' },
-  { id: 13, src: '/carrossel/FITA NC 8020.webp', alt: 'Fita Níquel-Cromo 80/20' },
-  { id: 14, src: '/carrossel/cabo_alta_temperatura_4_00_mm_1_5_metro_673_1_1fa30c14d97445dc84dbb34088309942.webp', alt: 'Cabo Alta Temperatura 4,00mm - 1,5 Metro' },
-  { id: 15, src: '/carrossel/cabos-eletricos-condsucobre-85-1.webp', alt: 'Cabos Elétricos - Condutor Cobre' },
+  { id: 9, src: '/carrossel/FIOS E FITAS DE NIQUELCROMO 80 20 RESIBRAZ.jpg', alt: 'Fios e Fitas de Níquel-Cromo 80/20' },
+  { id: 10, src: '/carrossel/FITA NC 8020.webp', alt: 'Fita Níquel-Cromo 80/20' },
+  { id: 11, src: '/carrossel/cabo_alta_temperatura_4_00_mm_1_5_metro_673_1_1fa30c14d97445dc84dbb34088309942.webp', alt: 'Cabo Alta Temperatura 4,00mm - 1,5 Metro' },
+  { id: 12, src: '/carrossel/cabos-eletricos-condsucobre-85-1.webp', alt: 'Cabos Elétricos - Condutor Cobre' },
 
   // Adaptadores e Tomadas
-  { id: 16, src: '/carrossel/ADAPTADOR DE LATÃO  A1 .jpg', alt: 'Adaptador de Latão A1' },
-  { id: 17, src: '/carrossel/A1.jpg', alt: 'Adaptador A1' },
-  { id: 18, src: '/carrossel/A3.jpg', alt: 'Adaptador A3' },
-  { id: 19, src: '/carrossel/A4.webp', alt: 'Adaptador A4' },
-  { id: 20, src: '/carrossel/A5.webp', alt: 'Adaptador A5' },
-  { id: 21, src: '/carrossel/TOMADA DE ALUMÍNIO EM L .jpeg', alt: 'Tomada de Alumínio em L' },
-  { id: 22, src: '/carrossel/TOMADA EM ALUMÍNIO RETA .jpeg', alt: 'Tomada em Alumínio Reta' },
-  { id: 23, src: '/carrossel/tomada a t.webp', alt: 'Tomada em T' },
-  { id: 24, src: '/carrossel/adaptador_longo_1_4_bsp_p_baioneta_pequena_63_2_e3d59b82562dc3a2630278b0f6e0c452.webp', alt: 'Adaptador Longo 1/4 BSP para Baioneta Pequena' },
+  { id: 13, src: '/carrossel/ADAPTADOR DE LATÃO  A1 .jpg', alt: 'Adaptador de Latão A1' },
+  { id: 14, src: '/carrossel/A3.jpg', alt: 'Adaptador A3' },
+  { id: 15, src: '/carrossel/A4.webp', alt: 'Adaptador A4' },
+  { id: 16, src: '/carrossel/TOMADA DE ALUMÍNIO EM L .jpeg', alt: 'Tomada de Alumínio em L' },
+  { id: 17, src: '/carrossel/TOMADA EM ALUMÍNIO RETA .jpeg', alt: 'Tomada em Alumínio Reta' },
+  { id: 18, src: '/carrossel/tomada a t.webp', alt: 'Tomada em T' },
+  { id: 19, src: '/carrossel/adaptador_longo_1_4_bsp_p_baioneta_pequena_63_2_e3d59b82562dc3a2630278b0f6e0c452.webp', alt: 'Adaptador Longo 1/4 BSP para Baioneta Pequena' },
 
   // Terminais
-  { id: 25, src: '/carrossel/TERMINAIS DE LIGAÇÃO .jpg', alt: 'Terminais de Ligação' },
-  { id: 26, src: '/carrossel/613kSzGgozL._SL1200_.webp', alt: 'Terminal Especial' },
+  { id: 20, src: '/carrossel/TERMINAIS DE LIGAÇÃO .jpg', alt: 'Terminais de Ligação' },
+  { id: 21, src: '/carrossel/613kSzGgozL._SL1200_.webp', alt: 'Terminal Especial' },
   
-  // Produtos Diversos
-  { id: 27, src: '/carrossel/D_NQ_NP_638516-MLB51854756196_102022-F (1).jpg', alt: 'Produto Industrial Especializado' },
-  { id: 28, src: '/carrossel/Imagem do WhatsApp de 2025-09-25 à(s) 11.26.13_b5383f76.jpg', alt: 'Produto RESIBRAZ' },
-
-  // Produtos WhatsApp Images (organizados por data)
-  { id: 29, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.54.29.jpeg', alt: 'Resistência Industrial' },
-  { id: 30, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.54.29 (1).jpeg', alt: 'Componente Térmico' },
-  { id: 31, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.54.30.jpeg', alt: 'Resistência Especializada' },
-  { id: 32, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.54.30 (2).jpeg', alt: 'Produto Térmico Industrial' },
-  { id: 33, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.54.30 (3).jpeg', alt: 'Componente Resistivo' },
-  { id: 34, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.54.31 (1).jpeg', alt: 'Resistência Personalizada' },
-  { id: 35, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.54.31 (2).jpeg', alt: 'Produto Industrial RESIBRAZ' },
-  { id: 36, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.56.07.jpeg', alt: 'Resistência de Alta Precisão' },
-  { id: 37, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.56.07 (1).jpeg', alt: 'Componente Térmico Avançado' },
-  { id: 38, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.56.07 (2).jpeg', alt: 'Resistência Industrial Especial' },
-  { id: 39, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.56.07 (4).jpeg', alt: 'Produto Resistivo' },
-  { id: 40, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.56.07 (6).jpeg', alt: 'Resistência Customizada' },
-  { id: 41, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.56.08.jpeg', alt: 'Componente Industrial' },
-  { id: 42, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.56.08 (3).jpeg', alt: 'Resistência RESIBRAZ' }
+  // Produtos Selecionados das Imagens WhatsApp
+  { id: 22, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.54.29.jpeg', alt: 'Resistência Industrial' },
+  { id: 23, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.54.30 (2).jpeg', alt: 'Produto Térmico Industrial' },
+  { id: 24, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.56.07 (1).jpeg', alt: 'Componente Térmico Avançado' },
+  { id: 25, src: '/carrossel/WhatsApp Image 2025-07-25 at 14.56.07 (6).jpeg', alt: 'Resistência Customizada' }
 ];
 
 export default function ProductCarousel() {
