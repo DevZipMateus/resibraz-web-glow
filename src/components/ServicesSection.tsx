@@ -97,7 +97,7 @@ const ServicesSection = () => {
             {services.map((service, index) => (
               <div key={index} className="card-elegant p-4 sm:p-6 group hover:scale-105 transition-all duration-300">
                 {/* Product Images */}
-                <div className="w-full h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden">
+                <div className="w-full h-40 sm:h-48 md:h-52 lg:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden bg-muted/20">
                   <AlternatingImage
                     images={service.images}
                     alts={service.alts}

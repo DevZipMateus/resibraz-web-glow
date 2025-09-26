@@ -28,6 +28,7 @@ export default function AlternatingImage({ images, alts, className = "" }: Alter
         alt={alts[currentIndex] || `Imagem ${currentIndex + 1}`}
         className="w-full h-full object-cover transition-opacity duration-500"
         key={currentIndex}
+        loading="lazy"
       />
     </div>
   );
