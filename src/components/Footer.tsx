@@ -104,7 +104,7 @@ const Footer = () => {
                 E-mail
               </a>
               <a
-                href="https://instagram.com/resibraz"
+                href="https://www.instagram.com/resibraz_materiais/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs sm:text-sm text-primary-foreground/80 hover:text-accent transition-colors duration-300"

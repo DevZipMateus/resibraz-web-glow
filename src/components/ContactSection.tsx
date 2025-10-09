@@ -28,7 +28,7 @@ const ContactSection = () => {
   ];
 
   const socialLinks = [
-    { name: "Instagram", url: "https://instagram.com/resibraz", icon: Instagram },
+    { name: "Instagram", url: "https://www.instagram.com/resibraz_materiais/", icon: Instagram },
     { name: "Facebook", url: "https://facebook.com/resibraz", icon: Facebook }
   ];
 
